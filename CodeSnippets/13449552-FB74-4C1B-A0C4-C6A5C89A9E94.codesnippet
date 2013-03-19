@@ -7,7 +7,6 @@
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>StringOrComment</string>
-		<string>CodeBlock</string>
 		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
@@ -21,6 +20,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>
