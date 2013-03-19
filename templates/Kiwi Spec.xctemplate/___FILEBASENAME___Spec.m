@@ -22,7 +22,9 @@ describe(@"___FILEBASENAME___", ^{
     });
     
     context(@"", ^{
-        
+        it(@"", ^{
+            
+        });
     });
 });
 
