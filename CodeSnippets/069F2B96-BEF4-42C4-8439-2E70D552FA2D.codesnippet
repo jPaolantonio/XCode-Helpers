@@ -3,19 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>step</string>
+	<string>notifications</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[scenario addStep:[KIFTestStep &lt;#method#&gt;]];</string>
+	<string>//TODO: Remove Notifcation Center Helper
+    [[NSNotificationCenter defaultCenter] addObserverForName:nil object:nil queue:nil usingBlock:^(NSNotification *notification) {
+        NSLog(@"Notification: %@", notification.name);
+    }];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>6232E345-DB72-4E4C-9ED7-0483B9D09F21</string>
+	<string>069F2B96-BEF4-42C4-8439-2E70D552FA2D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>KIF TestStep</string>
+	<string>Notifications Log</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

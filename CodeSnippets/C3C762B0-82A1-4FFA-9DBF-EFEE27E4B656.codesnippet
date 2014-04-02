@@ -3,19 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>step</string>
+	<string>local</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[scenario addStep:[KIFTestStep &lt;#method#&gt;]];</string>
+	<string>NSManagedObjectContext *localContext = [NSManagedObjectContext MR_contextWithParent:[NSManagedObjectContext MR_defaultContext]];
+[localContext performBlock:^{
+    
+    [localContext MR_saveWithOptions:MRSaveParentContexts | MRSaveSynchronously completion:^(BOOL success, NSError *error) {
+        
+    }];
+}];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>6232E345-DB72-4E4C-9ED7-0483B9D09F21</string>
+	<string>C3C762B0-82A1-4FFA-9DBF-EFEE27E4B656</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>KIF TestStep</string>
+	<string>Local Context</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

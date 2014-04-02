@@ -3,19 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>step</string>
+	<string>success</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[scenario addStep:[KIFTestStep &lt;#method#&gt;]];</string>
+	<string>- (AFSuccessResponseBlock)successBlock {
+    __weak &lt;#class#&gt; *safeSelf = self;
+    return ^(AFHTTPRequestOperation *operation, id response) {
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+        });
+    };
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>6232E345-DB72-4E4C-9ED7-0483B9D09F21</string>
+	<string>D55A026E-3461-4CAC-98E8-B2B566C09A11</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>for AFNetworking</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>KIF TestStep</string>
+	<string>Success block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

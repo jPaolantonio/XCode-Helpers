@@ -3,19 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>step</string>
+	<string>randomcolor</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[scenario addStep:[KIFTestStep &lt;#method#&gt;]];</string>
+	<string>@interface UIColor (RandomColor)
++ (UIColor *)randomColor;
+@end
+
+static inline CGFloat randomFloat() { return (CGFloat)arc4random()/RAND_MAX; }
+
+@implementation UIColor (RandomColor)
++ (UIColor *)randomColor {
+    return [UIColor colorWithRed:randomFloat() green:randomFloat() blue:randomFloat() alpha:1.0];
+}
+@end</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>6232E345-DB72-4E4C-9ED7-0483B9D09F21</string>
+	<string>C37BEE1C-728D-4ED2-85CA-2187010A457A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>KIF TestStep</string>
+	<string>Random color</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

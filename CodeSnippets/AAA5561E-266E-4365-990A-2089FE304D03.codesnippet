@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>step</string>
+	<string>weak</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[scenario addStep:[KIFTestStep &lt;#method#&gt;]];</string>
+	<string>@property (weak, nonatomic) &lt;#class#&gt; *&lt;#variableName#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>6232E345-DB72-4E4C-9ED7-0483B9D09F21</string>
+	<string>AAA5561E-266E-4365-990A-2089FE304D03</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>KIF TestStep</string>
+	<string>Weak Property</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
